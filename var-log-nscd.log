@@ -1,0 +1,17 @@
+/var/log/nscd.log========>
+
+
+al1024:/var/log # du -sh /var/log/nscd.log
+1.3G    /var/log/nscd.log
+al1024:/var/log # cp -p nscd.log /tmp/nscd.log-20230331
+al1024:/var/log # > nscd.log
+al1024:/var/log # gzip /tmp/nscd.log-20230331
+al1024:/var/log # mv /tmp/nscd.log-20230331.gz .
+al1024:/var/log # df -h /tmp
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/vg00-tmpvol  4.0G  662M  3.1G  18% /tmp
+al1024:/var/log # du -sh /var/log/nscd.log
+224K    /var/log/nscd.log
+al1024:/var/log # date
+Fri Mar 31 08:11:25 CDT 2023
+al1024:/var/log #
