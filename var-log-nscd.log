@@ -1,3 +1,10 @@
+al1024:/var/log # du -sh /var/log/nscd.log
+1.3G    /var/log/nscd.log
+al1024:/var/log # cp -p nscd.log /tmp/nscd.log-20230331
+al1024:/var/log # > nscd.log
+al1024:/var/log # gzip /tmp/nscd.log-20230331
+al1024:/var/log # mv /tmp/nscd.log-20230331.gz .
+al1024:/
 /var/log/nscd.log========>
 
 
