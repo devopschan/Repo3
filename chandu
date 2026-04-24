@@ -1,26 +1,10 @@
-http://192.168.1.101:8080/
-http://192.168.1.101:8080/
-http://192.168.1.101:8080/
-
-
-
-
-
-# Go to your project folder
-cd /opt/myapp
-
-# Initialize git (only once)
-git init
-
-# Add files
-git add .
-
-# Commit changes
-git commit -m "First commit"
-
-# Add GitHub repo (HTTPS)
-git remote add origin https://github.com/your-username/your-repo.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
+al1024:/var/log # du -sh /var/log/nscd.log
+1.3G    /var/log/nscd.log
+al1024:/var/log # cp -p nscd.log /tmp/nscd.log-20230331
+al1024:/var/log # > nscd.log
+al1024:/var/log # gzip /tmp/nscd.log-20230331
+al1024:/var/log # mv /tmp/nscd.log-20230331.gz .
+al1024:/var/log # df -h /tmp
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/vg00-tmpvol  4.0G  662M  3.1G  18% /tmp
+al1024:/var
